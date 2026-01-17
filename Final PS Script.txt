@@ -746,16 +746,6 @@ $datasetRefreshScheduleRenameMap = @{
     "notifyOption" = "DatasetRefreshScheduleNotifyOption"
 }
 
-$dataflowRefreshRenameMap = @{
-    "requestId" = "DataflowRefreshRequestId";
-    "id" = "DataflowRefreshId";
-    "startTime" = "DataflowRefreshStartTime";
-    "endTime" = "DataflowRefreshEndTime";
-    "status" = "DataflowRefreshStatus" ;
-    "refreshType" = "DataflowRefreshType" ;
-    "errorInfo" = "DataflowErrorInfo"
-}
-
 $dataflowRenameMap = @{
     "configuredBy"      = "DataflowConfiguredBy";
     "description"       = "DataflowDescription";
@@ -765,6 +755,23 @@ $dataflowRenameMap = @{
     "name"             = "DataflowName";
     "objectId"         = "DataflowId";
     "generation" = "DataflowGeneration"
+}
+
+# Define renaming map for Fabric Dataflows (Gen 2 CICD)
+$fabricDataflowRenameMap = @{
+    "id" = "DataflowId";
+    "displayName" = "DataflowName";
+    "description" = "DataflowDescription"
+}
+
+$dataflowRefreshRenameMap = @{
+    "requestId" = "DataflowRefreshRequestId";
+    "id" = "DataflowRefreshId";
+    "startTime" = "DataflowRefreshStartTime";
+    "endTime" = "DataflowRefreshEndTime";
+    "status" = "DataflowRefreshStatus" ;
+    "refreshType" = "DataflowRefreshType" ;
+    "errorInfo" = "DataflowErrorInfo"
 }
 
 $dataflowLineageRenameMap = @{
@@ -823,14 +830,6 @@ $fabricItemsRenameMap = @{
     "displayName" = "FabricItemName";
     "description" = "FabricItemDescription"
 }
-
-# Define renaming map for Fabric Dataflows (Gen 2 CICD)
-$fabricDataflowRenameMap = @{
-    "id" = "DataflowId";
-    "displayName" = "DataflowName";
-    "description" = "DataflowDescription"
-}
-
 
 
 # Fetch and filter workspaces
